@@ -1,0 +1,65 @@
+.note {
+  color: #fff;
+  padding: 20px 38px;
+  min-height: 482px;
+  background: #e3353d url("../img/3-layers.png") no-repeat;
+  background-position: bottom;
+
+  &__title {
+    text-align: center;
+    margin-top: 0;
+    font-size: 28px;
+  }
+  &__list {
+   font-size: 35px;
+   font-family: Playfair Display;
+   margin: 0;
+   .list-reset();
+  }
+  &__item {
+    position: relative;
+  }
+  &__number {
+    position: absolute;
+    top: 7px;
+    display: inline-block;
+    margin: 0;
+  }
+
+  &__subtitle {
+   font-size: 15px;
+   font-weight: 700;
+   font-family: circle;
+   padding-left: 25px;
+  }
+  &__text {
+   font-size: 14px;
+   padding-left: 25px;
+  }
+}
+
+@media @tablet {
+  .note {
+    padding-left: 50vw;
+    min-height: 420px;
+    padding-left: 328px;
+    background: #e3353d url("../img/3-layers-tablet.png") no-repeat;
+
+    &__title {
+      font-size: 28px;
+    }
+  }
+}
+
+@media @desktop {
+    .note {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-top: 128px;
+      padding-bottom: 185px;
+      padding-left: 50vw;
+      min-height: 703px;
+      background: #e3353d url("../img/3-layers-desktop.png") no-repeat;
+  }
+}

@@ -1,0 +1,144 @@
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    text-align: center;
+
+
+    &__title {
+        margin: 0 auto;
+        margin-top: 23px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+        font-family: Playfair Display;
+    }
+    &__subtitle {
+        font-size: 22px;
+        font-family: IntroScriptR-H2Base;
+    }
+    &__text {
+        position: relative;
+        text-align: left;
+        padding-left: 42px;
+        padding-right: 41px;
+        &--first::before,
+        &--second::before {
+            content: "";
+            position: absolute;
+
+            left: 0px;
+            width: 33px;
+            height: 33px;
+        }
+        &--first::before {
+            top: -8px;
+            background: url("../img/icon-1.png") no-repeat;
+            background-size: contain;
+        }
+        &--second::before {
+            top:4px;
+            background: url("../img/icon-2.png") no-repeat;
+            background-size: contain;
+        }
+
+    }
+    &__btn {
+        width: 226px;
+        margin: 0 auto 30px;
+        order: 6;
+    }
+}
+
+
+@media @mobile {
+    .heading {
+        min-height: 480px;
+    }
+}
+
+
+@media @tablet {
+    .heading {
+        .container;
+        min-height: 330px;
+        padding-top: @h_header-tablet + 48px;
+        padding-bottom: 79px;
+        padding-right: 267px;
+        padding-left: 26px;
+        background-image: url("../img/bg/bg-back-tablet@1x.jpg");
+        background-repeat: repeat;
+        background-position: top 0 left 50%;
+
+        &__text-container {
+            display: flex;
+            order: 6;
+        }
+
+
+        &__title {
+            padding-left: 0;
+
+            padding-right: 160px;
+            font-size: 60px;
+            line-height: (60 / 50);
+            text-align: left;
+        }
+
+
+        &__subtitle {
+            font-size: 36px;
+            text-align: left;
+        }
+
+        &__btn {
+            margin-left: 0;
+        }
+
+
+    }
+}
+
+
+@media @desktop {
+    .heading {
+        min-height: 280px;
+        padding-top: @h_header-desktop + 40px;
+        padding-bottom: 101px;
+        background-image: url("../img/bg/bg-back-desktop.jpg");
+        background-repeat: repeat;
+        background-position: top 0 left 50%;
+
+        &--index {
+            min-height: 853px;
+            padding-top: @h_header-desktop + 85px;
+            background-image: url("../img/bg/bg-back-desktop.jpg");
+            background-repeat: repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+
+
+        @media @retina2x {
+            background-image: url("../img/bg/bg-back-desktop.jpg");
+        }
+
+        &__title {
+            padding-left: 90px;
+            padding-right: 90px;
+            font-size: @fz_xxlarge;
+            line-height: (60 / 50);
+        }
+
+
+        &__title--index {
+            width: 300px;
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 22px;
+            margin-left: 0;
+        }
+    }
+}

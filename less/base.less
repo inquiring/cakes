@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  margin: 0;
+}
+
+
+button, input, optgroup, select, textarea {
+    font: inherit;
+    margin: 0;
+}
+// убираем точку
+ol > li {
+    list-style-type:none;
+    counter-increment: list;
+}
+ol > li:before {
+    content: counter(list) " ";
+}

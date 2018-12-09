@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cakes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=NTR" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="page-header">
+        <div class="container">
+            <div class="page-header__inner">
+                <div class="page-header__logo">
+                    <div class="logo">Cakes</div>
+                </div>
+                <div class="page-header__btn-burger js-toogle">
+                    <span></span>
+                </div>
+                <nav id="nav" class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a class="navigation__link navigation__link--active">Наши торты</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Индивидуальный заказ</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Отзывы</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">О нас</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Как заказать</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="page-content">
+        <div class="container">
+            <div class="heading">
+                <h1 class="heading__title heading__title--index">Торты на заказ</h1>
+                <p class="heading__subtitle">Ручная работа</p>
+                <button type="submit" class="heading__btn btn btn--submit">Выбрать торт</button>
+                <div class="heading__text-container">
+                    <p class="heading__text heading__text--first">Натуральные ингредиенты</p>
+                    <p class="heading__text heading__text--second">Доставка бесплатно при&nbsp;заказе от 2000 рублей*</p>
+                </div>
+
+            </div>
+            <div class="sub-menu">
+                <h2 class="sub-menu__title">Наши торты</h2>
+                <div class="sub-menu__item">
+                    <a href="#" class="sub-menu__img-link"></a>
+                    <h3 class="sub-menu__name">Классические</h3>
+                    <p class="sub-menu__number">24 видов</p>
+                </div>
+                <div class="sub-menu__item">
+                    <a href="#" class="sub-menu__img-link"></a>
+                    <h3 class="sub-menu__name">Муссовые</h3>
+                    <p class="sub-menu__number">12 видов</p>
+                </div>
+                <div class="sub-menu__item">
+                    <a href="#" class="sub-menu__img-link"></a>
+                    <h3 class="sub-menu__name">Свадебные</h3>
+                    <p class="sub-menu__number">20 видов</p>
+                </div>
+                <div class="sub-menu__item">
+                    <a href="#" class="sub-menu__img-link"></a>
+                    <h3 class="sub-menu__name">Мужчинам</h3>
+                    <p class="sub-menu__number">12 видов</p>
+                </div>
+                <div class="sub-menu__item">
+                    <a href="#" class="sub-menu__img-link"></a>
+                    <h3 class="sub-menu__name">Женщинам</h3>
+                    <p class="sub-menu__number">16 видов</p>
+                </div>
+                <div class="sub-menu__item">
+                    <a href="#" class="sub-menu__img-link"></a>
+                    <h3 class="sub-menu__name">Детские</h3>
+                    <p class="sub-menu__number">18 видов</p>
+                </div>
+            </div>
+            <div class="product">
+                <h2 class="product__title">Индивидуальный заказ</h2>
+                <p class="product__subtitle">Соберите торт в 3 шага</p>
+                <div class="product__list">
+                    <div class="product__item slider">
+                        <p class="product__title product__title--number">01</p>
+                        <h3 class="product__title product__title--step">Выберите начинку</h3>
+                        <input type="radio" id="toggle-chose-one-1" name="slider" checked="checked" class="slider__input" />
+                        <input type="radio" id="toggle-chose-one-2" name="slider" class="slider__input" />
+                        <input type="radio" id="toggle-chose-one-3" name="slider" class="slider__input" />
+                        <input type="radio" id="toggle-chose-one-4" name="slider" class="slider__input" />
+                        <input type="radio" id="toggle-chose-one-5" name="slider" class="slider__input" />
+                        <div class="slider__toggles slider__toggles--chose-one">
+                            <label for="toggle-chose-one-1" class="slider__toggle slider__toggle--1">Выбор:1
+                            </label>
+                            <label for="toggle-chose-one-2" class="slider__toggle slider__toggle--2">Выбор:2
+                            </label>
+                            <label for="toggle-chose-one-3" class="slider__toggle slider__toggle--3">Выбор:3
+                            </label>
+                            <label for="toggle-chose-one-4" class="slider__toggle slider__toggle--4">Выбор:4
+                            </label>
+                            <label for="toggle-chose-one-5" class="slider__toggle slider__toggle--5">Выбор:5
+                            </label>
+                        </div>
+                        <div class="slider__card slider__card--1">
+                            <a href="#" class="product__image-link">
+                              <img src="http://placehold.it/240x110" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__title">Шоколадный ганаш</p>
+                                <p class="product__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                                <p class="product__price">1000 руб/кг</p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--2">
+                            <a href="#" class="product__image-link">
+                                <img src="http://placehold.it/240x110" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__title">Шоколадный ганаш2</p>
+                                <p class="product__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, corporis quia suscipit. Provident architecto impedit nemo atque ducimus doloribus, optio, saepe libero est laudantium reiciendis quaerat assumenda dolores laborum iusto.</p>
+                                <p class="product__price">1500 руб/кг</p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--3">
+                            <a href="#" class="product__image-link">
+                                <img src="http://placehold.it/240x110" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__title">Шоколадный ганаш3</p>
+                                <p class="product__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quia asperiores facere hic. Atque nemo, tempore saepe iste, praesentium voluptatibus magnam minima laboriosam ex aliquid ullam doloremque, hic veniam ad.</p>
+                                <p class="product__price">30000 руб/кг</p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--4">
+                            <a href="#" class="product__image-link">
+                                <img src="http://placehold.it/240x110" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__title">Шоколадный ганаш4</p>
+                                <p class="product__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quia asperiores facere hic. Atque nemo, tempore saepe iste, praesentium voluptatibus magnam minima laboriosam ex aliquid ullam doloremque, hic veniam ad.</p>
+                                <p class="product__price">40000 руб/кг</p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--5">
+                            <a href="#" class="product__image-link">
+                                <img src="http://placehold.it/240x110" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__title">Шоколадный ганаш5</p>
+                                <p class="product__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quia asperiores facere hic. Atque nemo, tempore saepe iste, praesentium voluptatibus magnam minima laboriosam ex aliquid ullam doloremque, hic veniam ad.</p>
+                                <p class="product__price">60000 руб/кг</p>
+                            </div>
+                        </div>
+                        <a href="#" title="previous" class="slider__arrow slider__arrow--left">previous
+                                <svg class="slider__arrow-svg svg-icon-slider-arrow-left">
+                                  <use xlink:href="img/sprite-svg.svg #icon-slider-arrow-left"></use>
+                                </svg>
+                            </a>
+                        <a href="#" title="next" class="slider__arrow slider__arrow--right">next
+                                <svg class="slider__arrow-svg svg-icon-slider-arrow-right">
+                                  <use xlink:href="img/sprite-svg.svg #icon-slider-arrow-right"></use>
+                                </svg>
+                            </a>
+                        <button type="submit" class="product__btn btn btn--submit">Выбрать</button>
+                    </div>
+                    <div class="product__item slider">
+                        <p class="product__title product__title--number">02</p>
+                        <h3 class="product__title product__title--step">Размер</h3>
+                        <input type="radio" id="toggle-chose-two-1" name="chose-two" checked="checked" class="slider__input" />
+                        <input type="radio" id="toggle-chose-two-2" name="chose-two" class="slider__input" />
+                        <input type="radio" id="toggle-chose-two-3" name="chose-two" class="slider__input" />
+                        <input type="radio" id="toggle-chose-two-4" name="chose-two" class="slider__input" />
+                        <div class="slider__toggles slider__toggles--chose-two">
+                            <label for="toggle-chose-two-1" class="slider__toggle slider__toggle--1">Отзыв:1
+                            </label>
+                            <label for="toggle-chose-two-2" class="slider__toggle slider__toggle--2">Отзыв:2
+                            </label>
+                            <label for="toggle-chose-two-3" class="slider__toggle slider__toggle--3">Отзыв:3
+                            </label>
+                            <label for="toggle-chose-two-4" class="slider__toggle slider__toggle--4">Отзыв:3
+                            </label>
+                        </div>
+                        <div class="slider__card slider__card--1">
+                            <a href="#" class="product__image-link">
+                                <img src="http://placehold.it/110x110" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__text">17-18 см &nbsp;(1 кг – 6 персон)</p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--2">
+                            <a href="#" class="product__image-link">
+                                <img src="http://placehold.it/110x110" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__text">23-24 см &nbsp;(10–12 персон)</p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--3">
+                            <a href="#" class="product__image-link">
+                                <img src="http://placehold.it/110x110" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__text">Два яруса 25 и 20 см &nbsp;(15–20 персон)</p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--4">
+                            <a href="#" class="product__image-link">
+                                <img src="http://placehold.it/110x110" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__text">Три яруса 30,25 и 18 см &nbsp;(25–30 персон)</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="product__btn btn btn--submit">Выбрать</button>
+                    </div>
+                    <div class="product__item slider">
+                        <p class="product__title product__title--number">03</p>
+                        <h3 class="product__title product__title--step">Оформление</h3>
+                        <input type="radio" id="toggle-chose-three-1" name="chose-three" checked="checked" class="slider__input" />
+                        <input type="radio" id="toggle-chose-three-2" name="chose-three" class="slider__input" />
+                        <input type="radio" id="toggle-chose-three-3" name="chose-three" class="slider__input" />
+                        <input type="radio" id="toggle-chose-three-4" name="chose-three" class="slider__input" />
+                        <input type="radio" id="toggle-chose-three-5" name="chose-three" class="slider__input" />
+                        <div class="slider__toggles slider__toggles--chose-three">
+                            <label for="toggle-chose-three-1" class="slider__toggle slider__toggle--1">Выбор:1
+                            </label>
+                            <label for="toggle-chose-three-2" class="slider__toggle slider__toggle--2">Выбор:2
+                            </label>
+                            <label for="toggle-chose-three-3" class="slider__toggle slider__toggle--3">Выбор:3
+                            </label>
+                            <label for="toggle-chose-three-4" class="slider__toggle slider__toggle--4">Выбор:4
+                            </label>
+                            <label for="toggle-chose-three-5" class="slider__toggle slider__toggle--5">Выбор:5
+                            </label>
+                        </div>
+                        <div class="slider__card slider__card--1">
+                            <a href="#" class="product__image-link">
+                              <img src="http://placehold.it/169x196" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__title">Ягодное ассорти</p>
+                                <p class="product__price">700 руб/кг</p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--2">
+                            <a href="#" class="product__image-link">
+                              <img src="http://placehold.it/169x196" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__title">Маршмэллоу</p>
+                                <p class="product__price">600 руб/кг</p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--3">
+                            <a href="#" class="product__image-link">
+                              <img src="http://placehold.it/169x196" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__title">Маршмэллоу</p>
+                                <p class="product__price">600 руб/кг</p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--4">
+                            <a href="#" class="product__image-link">
+                              <img src="http://placehold.it/169x196" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__title">Маршмэллоу</p>
+                                <p class="product__price">600 руб/кг</p>
+                            </div>
+                        </div>
+                        <div class="slider__card slider__card--5">
+                            <a href="#" class="product__image-link">
+                              <img src="http://placehold.it/169x196" alt="#"/>
+                            </a>
+                            <div class="product__description">
+                                <p class="product__title">Маршмэллоу</p>
+                                <p class="product__price">600 руб/кг</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="product__btn btn btn--submit">Выбрать</button>
+                        <form action="/echo" method="post" class="form">
+                            <h2 class="form__title">Ваш выбор</h2>
+                            <div class="form__items">
+                                <div class="form__item">
+                                    <label for="form-user-filling" class="form__label">Начинка</label>
+                                    <input type="text" name="form-user-filling" id="form-user-filling" placeholder="Шоколадный ганаш" class="form__input">
+                                </div>
+                                <div class="form__item">
+                                    <label for="form-user-size" class="form__label">Размер</label>
+                                    <input type="number" min="1" max="8" step="1" name="form-user-size" id="form-user-size" placeholder="1 кг" class="form__input">
+                                </div>
+                                <div class="form__item">
+                                    <label for="form-user-decore" class="form__label">Оформление</label>
+                                    <input type="text" name="form-user-decore" id="form-user-decore" placeholder="Маршмэллоу" class="form__input">
+                                </div>
+                                <div class="form__btn-wrap">
+                                    <button type="submit" class="form__btn btn btn--submit">заказать торт</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews">
+                <h2 class="reviews__title">Отзывы</h2>
+                <input type="radio" id="toggle-reviews-1" name="reviews" checked="checked" class="reviews__input" />
+                <input type="radio" id="toggle-reviews-2" name="reviews" class="reviews__input" />
+                <input type="radio" id="toggle-reviews-3" name="reviews" class="reviews__input" />
+                <div class="reviews__item reviews__item--1">
+                    <blockquote class="comment">
+                        <a href="#" class="comment__photo-link">
+                      <img src="http://placehold.it/59x59" alt="#"/>
+                    </a>
+                        <p class="comment__text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)
+                        </p>
+                        <cite class="comment__author">Мария</cite>
+                        <div class="comment__about-author">
+                            <span class="comment__age">33 года,&nbsp;</span>
+                            <span class="comment__job">юрист</span>
+                        </div>
+                    </blockquote>
+                </div>
+                <div class="reviews__item reviews__item--2">
+                    <blockquote class="comment">
+                        <a href="#" class="comment__photo-link">
+                      <img src="http://placehold.it/59x59" alt="#"/>
+                    </a>
+                        <p class="comment__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Обеспечивает большой предложения наш одна своего осталось города оксмокс свою, свое все языкового даль продолжил.
+                        </p>
+                        <cite class="comment__author">Иван Сидоров</cite>
+                        <div class="comment__about-author">
+                            <span class="comment__age">95 лет,&nbsp;</span>
+                            <span class="comment__job">электрик</span>
+                        </div>
+                    </blockquote>
+                </div>
+                <div class="reviews__item reviews__item--3">
+                    <blockquote class="comment">
+                        <a href="#" class="comment__photo-link">
+                      <img src="http://placehold.it/59x59" alt="#"/>
+                    </a>
+                        <p class="comment__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Его ведущими что вершину продолжил прямо бросил послушавшись снова текст это если!
+                        </p>
+                        <cite class="comment__author">Петр Иванов</cite>
+                        <div class="comment__about-author">
+                            <span class="comment__age">18 лет,&nbsp;</span>
+                            <span class="comment__job">дворник</span>
+                        </div>
+                    </blockquote>
+                </div>
+                <a href="#" title="previous" class="reviews__arrow reviews__arrow--left">previous
+            <svg class="reviews__arrow-svg svg-icon-review-arrow-left">
+              <use xlink:href="img/sprite-svg.svg#icon-review-arrow-left"></use>
+            </svg>
+            </a>
+                <a href="#" title="next" class="reviews__arrow reviews__arrow--right">next
+            <svg class="reviews__arrow-svg svg-icon-review-arrow-right">
+              <use xlink:href="img/sprite-svg.svg#icon-review-arrow-right"></use>
+            </svg>
+            </a>
+                <div class="reviews__toggles">
+                    <label for="toggle-reviews-1" class="reviews__toggle reviews__toggle--1">Отзыв:1
+                    </label>
+                    <label for="toggle-reviews-2" class="reviews__toggle reviews__toggle--2">Отзыв:2
+                    </label>
+                    <label for="toggle-reviews-3" class="reviews__toggle reviews__toggle--3">Отзыв:3
+                    </label>
+                </div>
+            </div>
+
+            <section class="about-us">
+
+                <h2 class="about-us__title">О нас</h2>
+                <a href="#" class="about-us__photo-link">
+                <img src="http://placehold.it/156x156" alt="#"/>
+                </a>
+                <div class="about-us__social">
+                    <div class="social">
+                        <a href="#" title="twitter" class="social__link">twitter
+                  <svg class="social__svg social__svg--twitter svg-icon-twitter">
+                    <use xlink:href="img/sprite-svg.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+                        <a href="#" title="facebook" class="social__link">facebook
+                  <svg class="social__svg social__svg--facebook svg-icon-facebook">
+                    <use xlink:href="img/sprite-svg.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                        <a href="#" title="youtube" class="social__link">youtube
+                  <svg class="social__svg social__svg--youtube svg-icon-youtube">
+                    <use xlink:href="img/sprite-svg.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+                    </div>
+                </div>
+                <p class="about-us__subtitle">О кондитере</p>
+                <p class="about-us__text"><b>Кондитер – как призвание</b></p>
+                <p class="about-us__text">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство.С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.</p>
+                <p class="about-us__text"><b>Принцип – натуральные ингредиенты</b></p>
+                <p class="about-us__text">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.</p>
+                <blockquote class="blockquote">
+                    <p class="blockquote__text">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.
+                    </p>
+                </blockquote>
+            </section>
+
+        </div>
+
+        <div class="advantages">
+            <h2 class="advantages__title">Наши преимущества</h2>
+            <p class="advantages__subtitle">Почему нас выбирают ?</p>
+            <div class="advantages__item advantages__item--first">
+                <b class="advantages__text">Без искусственных добавок</b>
+                <p class="advantages__text">Работаем с натуральными ингредиентами и свежими продуктами</p>
+            </div>
+            <div class="advantages__item advantages__item--two">
+                <b class="advantages__text">Свежий торт в день торжества</b>
+                <p class="advantages__text">Торты изготавливаются в течение суток до отправки</p>
+            </div>
+            <div class="advantages__item advantages__item--care ">
+                <h2 class="advantages__title">Забота о клиентах</h2>
+                <p class="advantages__subtitle">Для нас важно</p>
+                <p class="advantages__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
+            </div>
+        </div>
+
+        <div class="note">
+            <h2 class="note__title">Как заказать</h2>
+            <ul class="note__list">
+                <li class="note__item">
+                    <p class="note__number">1</p>
+                    <b class="note__subtitle">Срок заказа</b>
+                    <p class="note__text">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
+                </li>
+                <li class="note__item">
+                    <p class="note__number">2</p>
+                    <b class="note__subtitle">Доставка по городу</b>
+                    <p class="note__text">Доставка в пределах города 200 рубей , при заказе на сумму более 2000 доставка бесплатно.</p>
+                </li>
+                <li class="note__item">
+                    <p class="note__number">3</p>
+                    <b class="note__subtitle">Доставка за городом</b>
+                    <p class="note__text">Доставка за пределами города рассчитывается индивидуально.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="info">
+            <form action="/echo" method="post" class="form form--contacts">
+                <h2 class="form__title form__title--contacts">Контакты</h2>
+                <p class="form__subtitle form__subtitle--contacts">Остались вопросы?</p>
+                <p class="form__text form__text--contacts">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+
+                <div class="form__item form__item--contacts">
+                    <label for="form-user-name" class="form__label" hidden="">Имя:</label>
+                    <input type="text" name="form-user-name" id="form-user-name" placeholder="Ваше имя" class="form__input form__input--contacts">
+                </div>
+                <div class="form__item form__item--contacts">
+                    <label for="form-user-email" class="form__label" hidden="">Email адрес</label>
+                    <input type="email" name="form-user-email" id="form-user-email" placeholder="Email адрес" class="form__input form__input--contacts">
+                </div>
+                <div class="form__item form__item--contacts">
+                    <textarea placeholder="Ваш вопрос" name="user-recall" id="user-recall" class="form__textarea form__textarea--contacts"></textarea>
+                </div>
+                <div class="form__btn-wrap">
+                    <button type="submit" class="form__btn btn btn--submit">Отправить</button>
+                </div>
+            </form>
+            <div class="footnote">
+                <p class="footnote__text">Или позвоните по телефону:</p>
+                <a class="footnote__text" href="tel:89068999296">+7 906 899 92 96</a>
+                <p class="footnote__text">Наша почта:</p>
+                <a class="footnote__text" href="bakerybypavel@mail.ru">bakerybypavel@mail.ru</a>
+                <p class="footnote__text">Мы в соц. сетях:</p>
+                <div class="social">
+                    <a href="#" title="twitter" class="social__link">twitter
+                      <svg class="social__svg social__svg--twitter svg-icon-twitter">
+                        <use xlink:href="img/sprite-svg.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                    <a href="#" title="facebook" class="social__link">facebook
+                      <svg class="social__svg social__svg--facebook svg-icon-facebook">
+                        <use xlink:href="img/sprite-svg.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                    <a href="#" title="youtube" class="social__link">youtube
+                      <svg class="social__svg social__svg--youtube svg-icon-youtube">
+                        <use xlink:href="img/sprite-svg.svg#icon-youtube"></use>
+                      </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="logo">Cakes</div>
+            <nav id="nav-footer" class="navigation-footer">
+                <ul class="navigation-footer__list">
+                    <li class="navigation-footer__item">
+                        <a class="navigation-footer__link navigation-footer__link--active">Наши торты</a>
+                    </li>
+                    <li class="navigation-footer__item">
+                        <a href="#" class="navigation-footer__link">Индивидуальный заказ</a>
+                    </li>
+                    <li class="navigation-footer__item">
+                        <a href="#" class="navigation-footer__link">Отзывы</a>
+                    </li>
+                    <li class="navigation-footer__item">
+                        <a href="#" class="navigation-footer__link">О нас</a>
+                    </li>
+                    <li class="navigation-footer__item">
+                        <a href="#" class="navigation-footer__link">Как заказать</a>
+                    </li>
+                    <li class="navigation-footer__item">
+                        <a href="#" class="navigation-footer__link">Контакты</a>
+                    </li>
+                    <li class="navigation-footer__item">
+                        <a class="navigation-footer__link" href="tel:89068999296">+7 906 899 92 96</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#" title="twitter" class="social__link">twitter
+              <svg class="social__svg social__svg--twitter svg-icon-twitter">
+                <use xlink:href="img/sprite-svg.svg#icon-twitter"></use>
+              </svg>
+            </a>
+                <a href="#" title="facebook" class="social__link">facebook
+              <svg class="social__svg social__svg--facebook svg-icon-facebook">
+                <use xlink:href="img/sprite-svg.svg#icon-facebook"></use>
+              </svg>
+            </a>
+                <a href="#" title="youtube" class="social__link">youtube
+              <svg class="social__svg social__svg--youtube svg-icon-youtube">
+                <use xlink:href="img/sprite-svg.svg#icon-youtube"></use>
+              </svg>
+            </a>
+            </div>
+            <p class="copyright">© 2018 Cakes</p>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

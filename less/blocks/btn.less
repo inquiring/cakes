@@ -1,0 +1,114 @@
+.btn {
+    display: inline-block;
+    padding: 21px 61px;
+    font-size: @fz_xxsmall-btn;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 26px;
+    transition: all 0.3s;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+    &:hover {
+        background-color: #fff;
+        color: @c_pink;
+    }
+
+
+    &:active {
+        color: @c_pink-opacity;
+        outline: none;
+    }
+
+
+    &:focus {
+        outline: none;
+    }
+
+
+    &--download {
+        color: #fff;
+    }
+
+
+    &--submit {
+        background-color: @bg_red;
+        color: #fff;
+    }
+
+
+    &--submit:hover {
+        background-color: @bg_pink;
+        color: #fff;
+    }
+
+
+    &--submit:active {
+        background-color: @bg_pink;
+        color: @c_white-opacity;
+    }
+
+
+    &--reset {
+        background-color: #fff;
+        border-color: @bg_black-opacity-light;
+        color: @c_black-opacity-light;
+    }
+
+
+    &--reset:hover {
+        border-color: @bg_black-opacity;
+        color: @c_black-opacity;
+    }
+
+
+    &--reset:active {
+        background-color: @bg_black-opacity;
+        border-color: @bg_black-opacity;
+        color: @c_white-opacity;
+    }
+
+    &--form {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        border: none;
+        border-radius: @bdrs_form;
+        background-color: @bg_green;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+
+    &--form:hover {
+        background-color: @bg_green-darker;
+        color: #fff;
+    }
+
+
+    &--form:active {
+        background-color: @bg_green-darker;
+        color: @c_white-opacity;
+    }
+}
+
+
+@media @tablet {
+    .btn {
+        font-size: 10px;
+        padding: 14.5px 36px;
+    }
+}
+
+
+@media @desktop {
+    .btn {
+
+        &--download {
+            font-size: @fz_xxsmall-btn;
+            line-height: 1;
+        }
+    }
+}

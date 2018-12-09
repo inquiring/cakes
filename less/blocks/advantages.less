@@ -1,0 +1,57 @@
+.advantages {
+
+    padding: @offset-mobile;
+    text-align: center;
+    background: transparent url("../img/cake.png") no-repeat;
+    min-height: 682px;
+    background-position: 50% 230%;
+
+    &__subtitle {
+      font-family: IntroScriptR-H2Base;
+      font-size: 22px;
+      margin-bottom: 13px;
+      margin-top: 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 60px;
+
+        padding-bottom: 10px;
+        margin-left: -1 * @offset-mobile;
+        margin-right: -1 * @offset-mobile;
+        padding-left: @offset-mobile + 15px;
+        padding-right: @offset-mobile + 15px;
+        min-height: 52px;
+        &--first {
+            min-height: 140px;
+            background: #fff url("../img/icon-1.png") no-repeat;
+            background-position: 50% 10%;
+        }
+
+        &--two {
+           min-height: 140px;
+           background: #fff url("../img/icon-2.png") no-repeat;
+           background-position: 50% 10%;
+        }
+        &:last-child {
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__text {
+        &:first-child {
+            font-size: 16px;
+            font-family: Circe-Bold;
+
+        }
+        &:last-child {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}

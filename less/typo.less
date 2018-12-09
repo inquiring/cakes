@@ -1,0 +1,65 @@
+body {
+    font-family: Circe-Regular,Arial,sans-serif;
+    font-size: @fz_xsmall;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+
+    color: #000;
+    background-color: @bg_pink-light;
+}
+
+
+.h1 {
+    font-size: @fz_xlarge;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Playfair Display";
+
+    color: #000;
+}
+
+
+.h2 {
+    font-size: @fz_xmedium;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Playfair Display";
+}
+
+.h3 {
+    font-size: @fz_small;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Playfair Display";
+
+}
+
+
+h1 {
+    .h1;
+}
+
+
+h2 {
+    .h2;
+}
+
+h3 {
+    .h3;
+}
+
+
+
+
+BODY > * {
+    outline: 2px solid deeppink;
+}
+BODY > * > * {
+    outline: 2px dashed lime;
+    outline-offset: -2px;
+}
+BODY > * > * > * {
+    outline: 2px dotted dodgerblue;
+    outline-offset: -4px;
+}
